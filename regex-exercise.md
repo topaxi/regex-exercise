@@ -8,7 +8,7 @@ To view this document in a more readable way, open it on Github using your brows
 ## Cheatsheet and help
 
 | Tokens               | Description                                                                                                                  |
-| -------------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | `[abc]`              | Match a single character of a, b or c                                                                                        |
 | `[^abc]`             | Match a single character **except** a, b or c                                                                                |
 | `[a-z]`              | Match a single character in the range of a to z                                                                              |
@@ -28,10 +28,10 @@ To view this document in a more readable way, open it on Github using your brows
 | `\t`                 | Match a single tab character                                                                                                 |
 | `\p{P} or \p{Punct}` | Match a single punctuation character (in Python Regular Expressions)                                                         |
 | `[[:punct:]]`        | Match a single punctuation character (in `egrep` or `grep -E` Regular Expressions)                                           |
-| `Upsi                | Lou`                                                                                                                         | Match either Upsi or Lou, note: prefer to use this with parenthesis               |
-| `(...)`              | Capture any enclosed token(s), useful to reference back to the captured value or to group tokens with `                      | ` (or)                                                                            |
-| `^(Upsi              | Lou)$`                                                                                                                       | Match either Upsi or Lou as the only word on a line (due to start and end tokens) |
-| `^(auf               | ab)\w+`                                                                                                                      | Match a word starting with auf- or ab-                                            |
+| `Upsi|Lou`           | Match either Upsi or Lou, note: prefer to use this with parenthesis                                                          |
+| `(...)`              | Capture any enclosed token(s), useful to reference back to the captured value or to group tokens with `|` (or)               |
+| `^(Upsi|Lou)$`       | Match either Upsi or Lou as the only word on a line (due to start and end tokens)                                            |
+| `^(auf|ab)\w+`       | Match a word starting with auf- or ab-                                                                                       |
 | `(\w)\1`             | Match two consecutive word characters, `\1` refers to the first group of parenthesis, `\2` would refer to a second group     |
 | `\w?`                | Match zero or one word character                                                                                             |
 | `\w*`                | Match zero or more word characters                                                                                           |
