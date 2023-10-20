@@ -7,40 +7,40 @@ To view this document in a more readable way, open it on Github using your brows
 
 ## Cheatsheet and help
 
-| Tokens               | Description                                                                                                                  |
-| -------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| `[abc]`              | Match a single character of a, b or c                                                                                        |
-| `[^abc]`             | Match a single character **except** a, b or c                                                                                |
-| `[a-z]`              | Match a single character in the range of a to z                                                                              |
-| `[^a-z]`             | Match a single character **not** in the range of a to z                                                                      |
-| `[a-zA-Z]`           | Match a single character in the range of a to z or A to Z                                                                    |
-| `.`                  | Match any single character                                                                                                   |
-| `\s`                 | Match a single whitespace character                                                                                          |
-| `\S`                 | Match a single non-whitespace character                                                                                      |
-| `\d`                 | Match a single digit                                                                                                         |
-| `\D`                 | Match a single non-digit                                                                                                     |
-| `\w`                 | Match a single word character (similar to `[a-zA-Z]` but also includes underscore, umlauts etc.)                             |
-| `\W`                 | Match a single non-word character                                                                                            |
-| `\b`                 | Match a single word boundary                                                                                                 |
-| `\B`                 | Match a single non-word boundary                                                                                             |
-| `\n`                 | Match a single newline                                                                                                       |
-| `\r`                 | Match a single carriage return (files originating from Windows terminate each line with `\n\r`, all other systems just `\n`) |
-| `\t`                 | Match a single tab character                                                                                                 |
-| `\p{P} or \p{Punct}` | Match a single punctuation character (in Python Regular Expressions)                                                         |
-| `[[:punct:]]`        | Match a single punctuation character (in `egrep` or `grep -E` Regular Expressions)                                           |
-| `Upsi|Lou`           | Match either Upsi or Lou, note: prefer to use this with parenthesis                                                          |
-| `(...)`              | Capture any enclosed token(s), useful to reference back to the captured value or to group tokens with `|` (or)               |
-| `^(Upsi|Lou)$`       | Match either Upsi or Lou as the only word on a line (due to start and end tokens)                                            |
-| `^(auf|ab)\w+`       | Match a word starting with auf- or ab-                                                                                       |
-| `(\w)\1`             | Match two consecutive word characters, `\1` refers to the first group of parenthesis, `\2` would refer to a second group     |
-| `\w?`                | Match zero or one word character                                                                                             |
-| `\w*`                | Match zero or more word characters                                                                                           |
-| `\w+`                | Match one or more word characters                                                                                            |
-| `\w{3}`              | Match exactly (any) three word characters                                                                                    |
-| `\w{3,}`             | Match three or more word characters                                                                                          |
-| `\w{3,5}`            | Match between three or five word characters                                                                                  |
-| `^`                  | Start of line or string                                                                                                      |
-| `$`                  | End of line or string                                                                                                        |
+| Tokens                 | Description                                                                                                                  |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `[abc]`                | Match a single character of a, b or c                                                                                        |
+| `[^abc]`               | Match a single character **except** a, b or c                                                                                |
+| `[a-z]`                | Match a single character in the range of a to z                                                                              |
+| `[^a-z]`               | Match a single character **not** in the range of a to z                                                                      |
+| `[a-zA-Z]`             | Match a single character in the range of a to z or A to Z                                                                    |
+| `.`                    | Match any single character                                                                                                   |
+| `\s`                   | Match a single whitespace character                                                                                          |
+| `\S`                   | Match a single non-whitespace character                                                                                      |
+| `\d`                   | Match a single digit                                                                                                         |
+| `\D`                   | Match a single non-digit                                                                                                     |
+| `\w`                   | Match a single word character (similar to `[a-zA-Z]` but also includes underscore, umlauts etc.)                             |
+| `\W`                   | Match a single non-word character                                                                                            |
+| `\b`                   | Match a single word boundary                                                                                                 |
+| `\B`                   | Match a single non-word boundary                                                                                             |
+| `\n`                   | Match a single newline                                                                                                       |
+| `\r`                   | Match a single carriage return (files originating from Windows terminate each line with `\n\r`, all other systems just `\n`) |
+| `\t`                   | Match a single tab character                                                                                                 |
+| `\p{P}` or `\p{Punct}` | Match a single punctuation character (in Python Regular Expressions)                                                         |
+| `[[:punct:]]`          | Match a single punctuation character (in `egrep` or `grep -E` Regular Expressions)                                           |
+| `Upsi|Lou`             | Match either Upsi or Lou, note: prefer to use this with parenthesis                                                          |
+| `(...)`                | Capture any enclosed token(s), useful to reference back to the captured value or to group tokens with `|` (or)               |
+| `^(Upsi|Lou)$`         | Match either Upsi or Lou as the only word on a line (due to start and end tokens)                                            |
+| `^(auf|ab)\w+`         | Match a word starting with auf- or ab-                                                                                       |
+| `(\w)\1`               | Match two consecutive word characters, `\1` refers to the first group of parenthesis, `\2` would refer to a second group     |
+| `\w?`                  | Match zero or one word character                                                                                             |
+| `\w*`                  | Match zero or more word characters                                                                                           |
+| `\w+`                  | Match one or more word characters                                                                                            |
+| `\w{3}`                | Match exactly (any) three word characters                                                                                    |
+| `\w{3,}`               | Match three or more word characters                                                                                          |
+| `\w{3,5}`              | Match between three or five word characters                                                                                  |
+| `^`                    | Start of line or string                                                                                                      |
+| `$`                    | End of line or string                                                                                                        |
 
 ## Matching simple substrings
 
